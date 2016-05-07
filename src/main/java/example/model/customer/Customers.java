@@ -1,4 +1,4 @@
-package example.customer;
+package example.model.customer;
 
 import java.util.List;
 
