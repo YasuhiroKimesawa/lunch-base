@@ -16,4 +16,8 @@ class Name
         this.firstName = firstName;
         this.familyName = familyName;
     }
+
+    public Name()
+    {
+    }
 }

@@ -12,4 +12,8 @@ public class CustomerId
     {
         this.value = value;
     }
+
+    public CustomerId()
+    {
+    }
 }
