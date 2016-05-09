@@ -1,16 +1,19 @@
 package example.model.customer;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class CustomerFactory
 {
-    public Customer create( Integer id, String familyName, String firstName )
+    @Autowired
+    private CustomerRepository customerRepository;
+
+    public Customer create( String familyName, String firstName )
     {
-        CustomerId customerId = new CustomerId( id );
+        CustomerId customerId = customerRepository.nextId();
         Name name = new Name( familyName, firstName );
 
         return new Customer( customerId, name );
-
     }
 }

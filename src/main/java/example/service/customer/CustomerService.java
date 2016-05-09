@@ -3,6 +3,7 @@ package example.service.customer;
 import example.model.customer.Customer;
 import example.model.customer.CustomerId;
 import example.model.customer.CustomerRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

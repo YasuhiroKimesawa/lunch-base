@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="example.dataaccess.customer.CustomerMapper">
+    <resultMap id="customer" type="example.model.customer.Customer">
+        <id column="customer_id" property="customerId.value" />
+        <result column="family_name" property="name.familyName" />
+        <result column="first_name" property="name.firstName" />
+    </resultMap>
+
+    <select id="findById" resultMap="customer">
+        SELECT
+          customer_id, family_name, first_name
+        FROM
+          CUSTOMER.CUSTOMERS
+        WHERE customer_id = #{customerId.value}
+    </select>
+</mapper>

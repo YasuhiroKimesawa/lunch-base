@@ -2,6 +2,9 @@ package example.web;
 
 import example.model.customer.Customer;
 import example.model.customer.CustomerFactory;
+import example.model.customer.CustomerId;
+import example.service.customer.CustomerService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,10 +18,13 @@ public class CustomerResource
     @Autowired
     private CustomerFactory customerFactory;
 
+    @Autowired
+    private CustomerService customerService;
+
     @RequestMapping( value = "", method = RequestMethod.GET )
     public Customer customer()
     {
-        Customer customer = customerFactory.create( 1, "田中", "達也" );
+        Customer customer = customerService.findBy( new CustomerId( (long)1 ) );
 
         return customer;
     }
