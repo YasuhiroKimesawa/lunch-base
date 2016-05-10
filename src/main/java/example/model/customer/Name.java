@@ -17,7 +17,4 @@ class Name
         this.familyName = familyName;
     }
 
-    public Name()
-    {
-    }
 }
