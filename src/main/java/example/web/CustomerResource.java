@@ -1,7 +1,6 @@
 package example.web;
 
 import example.model.customer.Customer;
-import example.model.customer.CustomerFactory;
 import example.model.customer.CustomerId;
 import example.service.customer.CustomerService;
 
@@ -15,9 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping( "customer" )
 public class CustomerResource
 {
-    @Autowired
-    private CustomerFactory customerFactory;
-
     @Autowired
     private CustomerService customerService;
 
