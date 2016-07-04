@@ -17,4 +17,8 @@ class Name
         this.familyName = familyName;
     }
 
+    String fullName()
+    {
+        return String.format( "%s %s", this.familyName, this.firstName );
+    }
 }

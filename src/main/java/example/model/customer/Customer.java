@@ -17,4 +17,9 @@ public class Customer
         this.name = name;
     }
 
+    public String fullName()
+    {
+        return name.fullName();
+    }
+
 }

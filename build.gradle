@@ -32,6 +32,14 @@ jar {
     version = '0.1.0'
 }
 
+test {
+    if (project.hasProperty('sysprops')) {
+        project.sysprops.split('\\s+').each {
+            systemProperty it.split('=')[0], it.split('=')[1]
+        }
+    }
+}
+
 dependencies {
 
     compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
