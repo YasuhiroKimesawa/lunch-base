@@ -9,3 +9,9 @@ general:
   branches:
     only:
       - master
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: rest-api-noproperties
