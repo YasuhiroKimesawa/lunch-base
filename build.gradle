@@ -70,3 +70,8 @@ dependencies {
     testCompile 'org.codehaus.groovy:groovy:2.4.6'
 
 }
+
+// heroku用
+task stage(dependsOn: [clean, assemble]) {
+}
+stage.mustRunAfter(clean)
