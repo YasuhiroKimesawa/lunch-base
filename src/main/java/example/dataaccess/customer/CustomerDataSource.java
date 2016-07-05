@@ -24,4 +24,14 @@ public class CustomerDataSource implements CustomerRepository
     {
         return customerMapper.findById( customerId );
     }
+
+    @Override
+    public Customer register( Customer customer )
+    {
+        customerMapper.registerCustomer( customer );
+
+        return customer;
+    }
+
+
 }

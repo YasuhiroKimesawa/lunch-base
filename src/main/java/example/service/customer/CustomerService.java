@@ -17,4 +17,9 @@ public class CustomerService
     {
         return customerRepository.findById( customerId );
     }
+
+    public Customer register( Customer customer )
+    {
+        return customerRepository.register( customer );
+    }
 }

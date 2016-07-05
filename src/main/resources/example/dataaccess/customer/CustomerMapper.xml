@@ -28,4 +28,11 @@
             <arg column="first_name" javaType="java.lang.String" />
         </constructor>
     </resultMap>
+
+    <insert id="registerCustomer">
+        INSERT INTO CUSTOMER.CUSTOMERS
+        (customer_id, family_name, first_name)
+        VALUES
+        (#{customer.customerId.value}, #{customer.name.familyName}, #{customer.name.firstName});
+    </insert>
 </mapper>
