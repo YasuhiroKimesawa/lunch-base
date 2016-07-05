@@ -15,5 +15,5 @@ public interface CustomerMapper
 
     Customer findById( @Param( "customerId" ) CustomerId customerId );
 
-    void registerCustomer( @Param( "customer") Customer customer );
+    long registerCustomer( @Param( "customer") Customer customer );
 }

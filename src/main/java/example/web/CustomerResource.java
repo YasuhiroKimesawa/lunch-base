@@ -30,8 +30,8 @@ public class CustomerResource
     @RequestMapping( value = "", method = RequestMethod.POST )
     public ResponseEntity<Customer> register( @RequestBody Customer customer )
     {
-        customerService.register( customer );
+        Customer newCustomer = customerService.register( customer );
 
-        return new ResponseEntity<>( customer, HttpStatus.CREATED );
+        return new ResponseEntity<>( newCustomer, HttpStatus.CREATED );
     }
 }

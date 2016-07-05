@@ -28,9 +28,13 @@ public class CustomerDataSource implements CustomerRepository
     @Override
     public Customer register( Customer customer )
     {
-        customerMapper.registerCustomer( customer );
+        long newId = customerMapper.nextId();
 
-        return customer;
+        Customer newCustomer = customer.createdCustomer( newId );
+
+        customerMapper.registerCustomer( newCustomer );
+
+        return newCustomer;
     }
 
 

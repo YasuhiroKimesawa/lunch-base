@@ -17,6 +17,11 @@ public class Customer
         this.name = name;
     }
 
+    public Customer createdCustomer( Long id )
+    {
+        return new Customer( new CustomerId( id ), this.name );
+    }
+
     public String fullName()
     {
         return name.fullName();
