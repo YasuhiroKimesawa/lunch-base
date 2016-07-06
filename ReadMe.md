@@ -59,8 +59,8 @@ brew install postgresql
   
 ### pgAdminインストール
 (WIN)  
-https://www.pgadmin.org/download/windows.php
+https://www.pgadmin.org/download/windows.php  
 (MAC)  
-https://www.pgadmin.org/download/macosx.php
+https://www.pgadmin.org/download/macosx.php  
   
 最新をインストール  
