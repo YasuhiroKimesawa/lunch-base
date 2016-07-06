@@ -2,8 +2,8 @@
 # Java基本
 
 ## VBSやPHPとの違い
-1. コンパイル
-1. 型がある
+1. [コンパイル言語](./JavaLanguage.md)
+1. [型がある](./JavaLanguage.md)
 
 ## はじめてのJava
 1. Hello World
