@@ -1,15 +1,15 @@
 # APIサンプル・アプリケーション
 
 ## 実行
-(MAC)
+(MAC) 
 ./gradlew bootRun
-(Win)
+(Win) 
 gradlew.bat bootRun
 
 ## Swagger2(API実行確認）
 http://localhost:8080/swagger-ui.html#!
 
-## CircleCI (ビルドとテストの実行、herokuにデプロイ)
+## CircleCI (githubにpushすると自動でビルドとテストを実行、その後herokuにデプロイ)
 https://circleci.com/gh/YasuhiroKimesawa/rest-api-noproperties
 
 ## heroku staging環境（CircleCIでテストが通った場合のみ反映)
@@ -24,13 +24,13 @@ https://rest-api-noproperties.herokuapp.com/swagger-ui.html#!
 
 「Java SE Development Kit 8u91」をダウンロード・インストール
 
-(Win)
+(Win) 
 完了後、コマンドプロンプトで「javac -version」と実行し、version情報がまだ出ない場合は以下を実行
 
 ・コントロール パネル＞システム＞システムの詳細設定＞環境変数＞ユーザー環境変数のPATHの値にjavacのあるフォルダのpathを追加（恐らくC:\Program Files\Java\jdk1.8.0_92\bin）→すでにほかの値がある場合はカンマ区切りで追加可能。
 ・コントロール パネル＞システム＞システムの詳細設定＞環境変数＞ユーザー環境変数[JAVA_HOME]を作成し、値をjavacのあるフォルダのpathを追加（恐らくC:\Program Files\Java\jdk1.8.0_92\bin)
 
-(Mac)
+(Mac) 
 完了後、ターミナルで以下を実行
 
 ```
@@ -47,19 +47,19 @@ PATH=${JAVA_HOME}/bin:${PATH}
 ターミナルを再起動し「javac -version」を確認する。
 
 ### Postgresqlインストール(注意：Version 9.5.3)
- (WIN)
+ (WIN) 
 http://www.enterprisedb.com/products-services-training/pgdownload#windows
 からダウンロード→インストール
 
- (MAC)
+ (MAC) 
 ```
 brew install postgresql
 ```
 
 ### pgAdminインストール
-(WIN)
+(WIN) 
 https://www.pgadmin.org/download/windows.php
-(MAC)
+(MAC) 
 https://www.pgadmin.org/download/macosx.php
 
 最新をインストール
