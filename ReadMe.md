@@ -1,5 +1,11 @@
 # APIサンプル・アプリケーション
 
+[![java-8u91](https://img.shields.io/badge/java-8u91-red.svg)]((http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+)
+[![postgresql-9.5.3](https://img.shields.io/badge/postgresql-9.5.3-red.svg)]((http://www.enterprisedb.com/products-services-training/pgdownload)
+)
+[![circleci-status](https://circleci.com/gh/YasuhiroKimesawa/rest-api-noproperties.png?style=shield)]((https://circleci.com/gh/YasuhiroKimesawa/rest-api-noproperties)
+)
 ## 実行
 (MAC)  
 ./gradlew bootRun  
