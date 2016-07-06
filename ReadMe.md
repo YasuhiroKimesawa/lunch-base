@@ -15,6 +15,11 @@ https://circleci.com/gh/YasuhiroKimesawa/rest-api-noproperties
 ## heroku staging環境（CircleCIでテストが通った場合のみ反映)
 https://rest-api-noproperties.herokuapp.com/swagger-ui.html#!
 
+## タスク管理ツール(Pivotal Taracker)
+https://www.pivotaltracker.com/n/projects/1634961  
+  
+(自分のタスク一覧)左メニューのMyWorkをクリックすると一番右のレーンに表示されます。  
+  
 ## Java インストール
 「javac -version」をコマンドプロンプトなどで実行し、version情報が出ないまたは1.8未満の場合は以下を実行
 
