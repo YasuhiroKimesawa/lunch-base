@@ -68,10 +68,9 @@ http://www.enterprisedb.com/products-services-training/pgdownload#windows
 brew install postgresql
 ```
   
-### pgAdminインストール
+### pgAdminインストール(3系の最新をインストール)
 (WIN)  
 https://www.pgadmin.org/download/windows.php  
 (MAC)  
 https://www.pgadmin.org/download/macosx.php  
   
-最新をインストール  
