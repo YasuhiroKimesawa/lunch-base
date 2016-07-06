@@ -1,0 +1,6 @@
+```Java
+public class Customer
+{
+
+}
+```

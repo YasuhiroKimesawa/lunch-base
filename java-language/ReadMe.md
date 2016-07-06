@@ -6,8 +6,8 @@
 1. [型がある](./JavaLanguage.md)
 
 ## はじめてのJava
-1. Hello World
-1. コメント
+1. [Hello World](http://www.javaroad.jp/java_basic1.htm)
+1. [コメント](http://www.javaroad.jp/java_coment.htm)
 
 ## クラス
 1. はじめてのクラス
