@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonIgnoreProperties (ignoreUnknown=true)
 public class CustomerId
 {
-    private Long value;
+    private final Long value;
 
     public CustomerId( @JsonProperty("value") Long value )
     {

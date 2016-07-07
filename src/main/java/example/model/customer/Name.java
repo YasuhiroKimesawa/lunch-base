@@ -6,9 +6,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonIgnoreProperties (ignoreUnknown=true)
 class Name
 {
-    private String familyName;
+    private final String familyName;
 
-    private String firstName;
+    private final String firstName;
 
     Name( @JsonProperty("familyName") String familyName
             , @JsonProperty("firstName") String firstName )
