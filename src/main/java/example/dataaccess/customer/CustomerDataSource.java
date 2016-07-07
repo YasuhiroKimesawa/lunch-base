@@ -27,7 +27,7 @@ public class CustomerDataSource implements CustomerRepository
     }
 
     @Override
-    public Customer findById( CustomerId customerId )
+    public Customer findBy( CustomerId customerId )
     {
         return customerMapper.findById( customerId );
     }

@@ -6,7 +6,7 @@ public interface CustomerRepository
 
     Customers findAll();
 
-    Customer findById( CustomerId customerId);
+    Customer findBy( CustomerId customerId);
 
     Customer register( Customer customer );
 }

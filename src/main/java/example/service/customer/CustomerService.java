@@ -21,7 +21,7 @@ public class CustomerService
 
     public Customer findBy( CustomerId customerId )
     {
-        return customerRepository.findById( customerId );
+        return customerRepository.findBy( customerId );
     }
 
     public Customer register( Customer customer )
