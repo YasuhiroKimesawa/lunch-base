@@ -3,10 +3,13 @@
  クラスの定義です。
  public・・・他のクラスから参照が可能という意味
  class・・・クラスであるという意味
+ 
+ クラスはコンストラクタ(生成)、メンバ変数（情報)、メソッド(振る舞い)
 */
 public class Customer
 {
-    // 名前クラス
+    // メンバ変数です。
+    // 名前クラス 
     private Name name;
     
     // 電話番号クラス
@@ -20,6 +23,7 @@ public class Customer
         this.phone = phone;
     }
     
+    // メソッドです。
     public fullName()
     {
         return this.name.fullName();
