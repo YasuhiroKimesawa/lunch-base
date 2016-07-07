@@ -8,6 +8,13 @@
         </constructor>
     </resultMap>
 
+    <select id="findAll" resultMap="customer">
+        SELECT
+        customer_id, family_name, first_name
+        FROM
+        CUSTOMER.CUSTOMERS
+    </select>
+
     <select id="findById" resultMap="customer">
         SELECT
           customer_id, family_name, first_name

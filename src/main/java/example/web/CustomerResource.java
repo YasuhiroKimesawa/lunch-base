@@ -2,15 +2,13 @@ package example.web;
 
 import example.model.customer.Customer;
 import example.model.customer.CustomerId;
+import example.model.customer.Customers;
 import example.service.customer.CustomerService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping( "customer" )
@@ -20,9 +18,17 @@ public class CustomerResource
     private CustomerService customerService;
 
     @RequestMapping( value = "", method = RequestMethod.GET )
-    public Customer customer()
+    public Customers customers()
     {
-        Customer customer = customerService.findBy( new CustomerId( (long)1 ) );
+        Customers customers = customerService.findAll();
+
+        return customers;
+    }
+
+    @RequestMapping( value = "{id}", method = RequestMethod.GET )
+    public Customer customer( @PathVariable ("id") Long id )
+    {
+        Customer customer = customerService.findBy( new CustomerId( id ) );
 
         return customer;
     }

@@ -4,6 +4,7 @@ import example.model.customer.Customer;
 import example.model.customer.CustomerId;
 import example.model.customer.CustomerRepository;
 
+import example.model.customer.Customers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -17,6 +18,12 @@ public class CustomerDataSource implements CustomerRepository
     public CustomerId nextId()
     {
         return new CustomerId( customerMapper.nextId() ) ;
+    }
+
+    @Override
+    public Customers findAll()
+    {
+        return new Customers( customerMapper.findAll() );
     }
 
     @Override
