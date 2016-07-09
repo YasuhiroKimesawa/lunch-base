@@ -36,8 +36,9 @@ public class Customer
 package example.model.customer;
 class Name
 {
-    private String familyName;
-    private String firstName;
+    // final・・・一度代入すると変更できなくなります。
+    private final String familyName;
+    private final String firstName;
     
     Name( Stirng familyName, String firstName )
     {
@@ -45,6 +46,7 @@ class Name
         this.firstName = firstName;
     }
     
+    // this・・・現在のインスタンス
     String fullName()
     {
         return String.format( "%s %s", this.familyName, this.firstName )
@@ -54,7 +56,7 @@ class Name
 package example.model.customer;
 class Phone
 {
-    private String value;
+    private final String value;
     
     Name( Stirng value )
     {
