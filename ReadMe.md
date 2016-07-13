@@ -1,4 +1,4 @@
-# APIサンプル・アプリケーション
+# LunchBase
 
 [![java-8u91](https://img.shields.io/badge/java-8u91-red.svg)]((http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 )
