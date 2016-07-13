@@ -39,9 +39,9 @@ https://www.pivotaltracker.com/n/projects/1634961
 (Win)  
 完了後、コマンドプロンプトで「javac -version」と実行し、version情報がまだ出ない場合は以下を実行  
   
-・コントロール パネル＞システム＞システムの詳細設定＞環境変数＞ユーザー環境変数のPATHの値にjavacのあるフォルダのpathを追加（恐らくC:\Program Files\Java\jdk1.8.0_92\bin）→すでにほかの値がある場合はカンマ区切りで追加可能。  
+・コントロール パネル＞システム＞システムの詳細設定＞環境変数＞ユーザー環境変数のPATHの値にjavacのあるフォルダのbinのpathを追加（恐らくC:\Program Files\Java\jdk1.8.0_92\bin）→すでにほかの値がある場合は「;」区切りで追加可能。  
   
-・コントロール パネル＞システム＞システムの詳細設定＞環境変数＞ユーザー環境変数[JAVA_HOME]を作成し、値をjavacのあるフォルダのpathを追加（恐らくC:\Program Files\Java\jdk1.8.0_92\bin)  
+・コントロール パネル＞システム＞システムの詳細設定＞環境変数＞ユーザー環境変数[JAVA_HOME]を作成し、値をjavacのあるフォルダのpathを追加（恐らくC:\Program Files\Java\jdk1.8.0_92)  
   
 (Mac)   
 完了後、ターミナルで以下を実行  
