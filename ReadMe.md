@@ -76,4 +76,4 @@ https://www.pgadmin.org/download/windows.php
 https://www.pgadmin.org/download/macosx.php  
   
   
-# [java Language](./doc/java-language/ReadMe.md)
+# [java Language](https://github.com/YasuhiroKimesawa/java-language)
