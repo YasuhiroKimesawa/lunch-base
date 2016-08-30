@@ -6,4 +6,9 @@ package example.model.User;
 public class User {
     private EmployeeNumber employeeNumber;
     private EmployeePassword employeePassword;
+
+    public User(EmployeeNumber employeeNumber, EmployeePassword employeePassword) {
+        this.employeeNumber = employeeNumber;
+        this.employeePassword = employeePassword;
+    }
 }
