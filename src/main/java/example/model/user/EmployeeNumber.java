@@ -1,13 +1,13 @@
-package example.model.User;
+package example.model.user;
 
 /**
  * Created by mac48 on 2016/08/10.
  */
 public class EmployeeNumber {
-    //’l‚ÌŒ^‚Ì’è‹` string‚Ì•¶šŒ^ value:•Ï”–¼@Employnumber‚Ì’l
+    //å€¤ã®å‹ã®å®šç¾© stringã®æ–‡å­—å‹ value:å¤‰æ•°åã€€Employnumberã®å€¤
     private String value;
-    //this‚Ìvalue‚ª8s–Ú‚Ìvalue
-    // (String value)‚ÍEmployNumber‚Ìˆø”.value;‚Æ“¯‚¶BƒRƒ“ƒXƒgƒ‰ƒNƒg‚ÍˆÈ‰ºB“ü—Í‚µ‚ÄƒT[ƒo[‘¤‚É“n‚Á‚½‚Æ‚«‚ÉƒIƒuƒWƒFƒNƒg‚ğ¶¬B
+    //thisã®valueãŒ8è¡Œç›®ã®value
+    // (String value)ã¯EmployNumberã®å¼•æ•°.value;ã¨åŒã˜ã€‚ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ãƒˆã¯ä»¥ä¸‹ã€‚å…¥åŠ›ã—ã¦ã‚µãƒ¼ãƒãƒ¼å´ã«æ¸¡ã£ãŸã¨ãã«ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã€‚
     public EmployeeNumber(String value) {
         this.value = value;
     }
