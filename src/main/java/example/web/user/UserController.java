@@ -1,5 +1,5 @@
 package example.web.user;
-//htmlと関連しているクラスと定義
+//html縺ｨ髢｢騾｣縺励※縺�繧九け繝ｩ繧ｹ縺ｨ螳夂ｾｩ
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
