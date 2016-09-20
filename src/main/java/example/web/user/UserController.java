@@ -13,7 +13,7 @@ public class UserController {
     @RequestMapping("")
     public String createUser()
     {
-        return "";
+        return "user/regist";
     }
 
 }
